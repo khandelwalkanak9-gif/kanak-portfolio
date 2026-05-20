@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kanak Anupam Khandelwal | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="light-mode">
+
+  <!-- Dark Mode Toggle -->
+  <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">
+    <i class="fas fa-moon" id="toggleIcon"></i>
+  </button>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">K<span>.</span>A<span>.</span>K</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+  </nav>
+
+  <!-- ===================== HOME SECTION ===================== -->
+  <section id="home" class="home-section">
+    <div class="home-bg-decor"></div>
+    <div class="home-content">
+      <div class="home-text">
+        <p class="home-greeting">Welcome to my world —</p>
+        <h1 class="home-name">Kanak Anupam<br /><span>Khandelwal</span></h1>
+        <p class="home-tagline">Engineering student · Innovator · Builder of ideas</p>
+        <p class="home-intro">
+          I believe every big idea starts with curiosity. From smart hospitals to smarter campuses,
+          I'm learning to turn problems into solutions — one project at a time.
+        </p>
+        <div class="home-cta">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="#contact" class="btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+      <div class="home-image-wrap">
+        <div class="home-image-ring"></div>
+        <!--
+          👉 Place your profile photo at: assets/images/pfp.jpg
+             It will show automatically once uploaded.
+        -->
+        <img
+          src="assets/images/pfp.jpg"
+          alt="Kanak Anupam Khandelwal"
+          class="home-pfp"
+          onerror="this.src='https://ui-avatars.com/api/?name=Kanak+Khandelwal&background=c9a96e&color=fff&size=300'"
+        />
+      </div>
+    </div>
+    <div class="scroll-hint"><span></span>Scroll to explore</div>
+  </section>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section id="about" class="about-section">
+    <div class="section-label">01 / About Me</div>
+    <h2 class="section-title">Who I Am</h2>
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="about-icon"><i class="fas fa-graduation-cap"></i></div>
+        <h3>Education</h3>
+        <p>Currently pursuing my engineering degree with a focus on technology and innovation.
+           An average student who believes hard work and curiosity matter more than grades.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon"><i class="fas fa-heart"></i></div>
+        <h3>Interests</h3>
+        <p>I'm fascinated by IoT, healthcare technology, smart systems, design thinking, and
+           how technology can solve real-world human problems in meaningful ways.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon"><i class="fas fa-bullseye"></i></div>
+        <h3>Goals</h3>
+        <p>To become an engineer who doesn't just write code but creates impact — building systems
+           that help communities, hospitals, and institutions work smarter.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon"><i class="fas fa-star"></i></div>
+        <h3>Strengths</h3>
+        <p>Team collaboration, creative problem-solving, willingness to learn new technologies,
+           and the ability to think from a user's perspective when designing solutions.</p>
+      </div>
+    </div>
+    <div class="about-quote">
+      <blockquote>"I may be an average student, but I have an above-average hunger to learn and grow."</blockquote>
+    </div>
+  </section>
+
+  <!-- ===================== ACHIEVEMENTS SECTION ===================== -->
+  <section id="achievements" class="achievements-section">
+    <div class="section-label">02 / Achievements</div>
+    <h2 class="section-title">Milestones & Certificates</h2>
+    <div class="achievements-grid">
+
+      <!-- Coursera -->
+      <div class="achievement-card">
+        <div class="ach-img-wrap">
+          <!-- 👉 Place file at: assets/images/certificates/coursera.jpg -->
+          <img src="assets/images/certificates/coursera.jpg" alt="Coursera Certificate"
+               onerror="this.parentElement.innerHTML='<div class=\'ach-placeholder\'><i class=\'fas fa-certificate\'></i></div>'" />
+          <div class="ach-badge">Certificate</div>
+        </div>
+        <div class="ach-info">
+          <h3>Coursera Certification</h3>
+          <p>Completed an online course through Coursera, building skills in a relevant technical
+             domain to supplement classroom learning.</p>
+          <span class="ach-tag"><i class="fas fa-tag"></i> Online Learning</span>
+        </div>
+      </div>
+
+      <!-- Netcad -->
+      <div class="achievement-card">
+        <div class="ach-img-wrap">
+          <!-- 👉 Place file at: assets/images/certificates/netcad.jpg -->
+          <img src="assets/images/certificates/netcad.jpg" alt="Netcad Certificate"
+               onerror="this.parentElement.innerHTML='<div class=\'ach-placeholder\'><i class=\'fas fa-network-wired\'></i></div>'" />
+          <div class="ach-badge">Certificate</div>
+        </div>
+        <div class="ach-info">
+          <h3>Netcad Certificate</h3>
+          <p>Earned certification from Netcad, demonstrating competency in networking and related
+             technical skills.</p>
+          <span class="ach-tag"><i class="fas fa-tag"></i> Networking</span>
+        </div>
+      </div>
+
+      <!-- Yuva AI -->
+      <div class="achievement-card">
+        <div class="ach-img-wrap">
+          <!-- 👉 Place file at: assets/images/certificates/yuva_ai.jpg -->
+          <img src="assets/images/certificates/yuva_ai.jpg" alt="Yuva AI Certificate"
+               onerror="this.parentElement.innerHTML='<div class=\'ach-placeholder\'><i class=\'fas fa-robot\'></i></div>'" />
+          <div class="ach-badge">Certificate</div>
+        </div>
+        <div class="ach-info">
+          <h3>Yuva AI Certificate</h3>
+          <p>Participated in the Yuva AI program, gaining foundational understanding of artificial
+             intelligence concepts and applications.</p>
+          <span class="ach-tag"><i class="fas fa-tag"></i> Artificial Intelligence</span>
+        </div>
+      </div>
+
+      <!-- AI4A -->
+      <div class="achievement-card">
+        <div class="ach-img-wrap">
+          <!-- 👉 Place file at: assets/images/certificates/ai4a.jpg -->
+          <img src="assets/images/certificates/ai4a.jpg" alt="AI4A Certificate"
+               onerror="this.parentElement.innerHTML='<div class=\'ach-placeholder\'><i class=\'fas fa-brain\'></i></div>'" />
+          <div class="ach-badge">Event</div>
+        </div>
+        <div class="ach-info">
+          <h3>AI4A Project Participation</h3>
+          <p>Presented a disease recognition system based on symptoms at the AI4A event —
+             an impactful project addressing healthcare through AI.</p>
+          <span class="ach-tag"><i class="fas fa-tag"></i> Healthcare AI</span>
+        </div>
+      </div>
+
+      <!-- Design Thinking -->
+      <div class="achievement-card">
+        <div class="ach-img-wrap">
+          <!-- 👉 Place file at: assets/images/certificates/design_thinking.jpg -->
+          <img src="assets/images/certificates/design_thinking.jpg" alt="Design Thinking"
+               onerror="this.parentElement.innerHTML='<div class=\'ach-placeholder\'><i class=\'fas fa-lightbulb\'></i></div>'" />
+          <div class="ach-badge">Award</div>
+        </div>
+        <div class="ach-info">
+          <h3>Design Thinking Project</h3>
+          <p>Applied design thinking methodology to solve real campus infrastructure challenges —
+             smart parking arrangement for the college campus.</p>
+          <span class="ach-tag"><i class="fas fa-tag"></i> Design Thinking</span>
+        </div>
+      </div>
+
+      <!-- ACE -->
+      <div class="achievement-card">
+        <div class="ach-img-wrap">
+          <!-- 👉 Place file at: assets/images/certificates/ace.jpg -->
+          <img src="assets/images/certificates/ace.jpg" alt="ACE Certificate"
+               onerror="this.parentElement.innerHTML='<div class=\'ach-placeholder\'><i class=\'fas fa-wind\'></i></div>'" />
+          <div class="ach-badge">Project</div>
+        </div>
+        <div class="ach-info">
+          <h3>ACE Project</h3>
+          <p>Developed a smart IoT-based ventilation system for hospital environments as part of
+             the ACE (Applied and Creative Engineering) project initiative.</p>
+          <span class="ach-tag"><i class="fas fa-tag"></i> IoT / Smart Systems</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS SECTION ===================== -->
+  <section id="projects" class="projects-section">
+    <div class="section-label">03 / Projects</div>
+    <h2 class="section-title">What I've Built</h2>
+    <div class="projects-grid">
+
+      <!-- AI4A Project -->
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <!-- 👉 Place file at: assets/images/projects/ai4a_project.jpg -->
+          <img src="assets/images/projects/ai4a_project.jpg" alt="AI4A Project"
+               onerror="this.parentElement.innerHTML='<div class=\'proj-placeholder\'><i class=\'fas fa-stethoscope\'></i></div>'" />
+          <div class="proj-overlay"><span>AI4A Project</span></div>
+        </div>
+        <div class="project-body">
+          <div class="proj-tag-row">
+            <span class="proj-tag">AI / ML</span>
+            <span class="proj-tag">Healthcare</span>
+            <span class="proj-tag">Python</span>
+          </div>
+          <h3>Disease Recognition System (AI4A)</h3>
+          <p>Built a symptom-based disease recognition system and presented it at the AI4A event.
+             The system takes user-reported symptoms as input and suggests possible diseases,
+             helping bridge the gap between patients and medical knowledge.</p>
+          <div class="proj-features">
+            <span><i class="fas fa-check-circle"></i> Symptom-based disease matching</span>
+            <span><i class="fas fa-check-circle"></i> Healthcare-focused AI application</span>
+            <span><i class="fas fa-check-circle"></i> Presented at AI4A event</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Design Thinking Project -->
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <!-- 👉 Place file at: assets/images/projects/design_thinking_project.jpg -->
+          <img src="assets/images/projects/design_thinking_project.jpg" alt="Design Thinking Project"
+               onerror="this.parentElement.innerHTML='<div class=\'proj-placeholder\'><i class=\'fas fa-parking\'></i></div>'" />
+          <div class="proj-overlay"><span>Design Thinking</span></div>
+        </div>
+        <div class="project-body">
+          <div class="proj-tag-row">
+            <span class="proj-tag">Design Thinking</span>
+            <span class="proj-tag">Campus Innovation</span>
+          </div>
+          <h3>Smart Campus Parking Arrangement</h3>
+          <p>Applied the full Design Thinking process — Empathize, Define, Ideate, Prototype, Test —
+             to solve the chronic parking chaos on campus. The solution involves a systematic,
+             zone-based parking layout with clear signage and flow management.</p>
+          <div class="proj-features">
+            <span><i class="fas fa-check-circle"></i> User-centered research</span>
+            <span><i class="fas fa-check-circle"></i> Zone-based parking model</span>
+            <span><i class="fas fa-check-circle"></i> Prototype &amp; tested solution</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACE Project -->
+      <div class="project-card">
+        <div class="project-img-wrap">
+          <!-- 👉 Place file at: assets/images/projects/ace_project.jpg -->
+          <img src="assets/images/projects/ace_project.jpg" alt="ACE Project"
+               onerror="this.parentElement.innerHTML='<div class=\'proj-placeholder\'><i class=\'fas fa-wind\'></i></div>'" />
+          <div class="proj-overlay"><span>ACE Project</span></div>
+        </div>
+        <div class="project-body">
+          <div class="proj-tag-row">
+            <span class="proj-tag">IoT</span>
+            <span class="proj-tag">Smart Systems</span>
+            <span class="proj-tag">Healthcare</span>
+          </div>
+          <h3>Smart IoT Ventilation System for Hospitals</h3>
+          <p>An ongoing ACE project developing an intelligent IoT-based ventilation system for
+             hospital environments. The system monitors air quality in real-time and auto-adjusts
+             ventilation to maintain safe, sterile conditions for patients and staff.</p>
+          <div class="proj-features">
+            <span><i class="fas fa-check-circle"></i> Real-time air quality monitoring</span>
+            <span><i class="fas fa-check-circle"></i> Automated ventilation control</span>
+            <span><i class="fas fa-check-circle"></i> Hospital-grade safety standards</span>
+          </div>
+          <span class="proj-status">🔧 In Progress</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY SECTION ===================== -->
+  <section id="gallery" class="gallery-section">
+    <div class="section-label">04 / Gallery</div>
+    <h2 class="section-title">Photos &amp; Certificates</h2>
+    <div class="gallery-tabs">
+      <button class="gallery-tab active" data-tab="all">All</button>
+      <button class="gallery-tab" data-tab="photos">Photos</button>
+      <button class="gallery-tab" data-tab="certs">Certificates</button>
+    </div>
+    <div class="gallery-grid" id="galleryGrid">
+
+      <!--
+        📸 PHOTOS — place your photos at: assets/images/gallery/
+        Add more <div class="gallery-item" data-type="photos"> blocks as needed.
+      -->
+      <div class="gallery-item" data-type="photos">
+        <img src="assets/images/gallery/photo1.jpg" alt="Photo 1"
+             onerror="this.parentElement.style.display='none'" />
+        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" data-type="photos">
+        <img src="assets/images/gallery/photo2.jpg" alt="Photo 2"
+             onerror="this.parentElement.style.display='none'" />
+        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" data-type="photos">
+        <img src="assets/images/gallery/photo3.jpg" alt="Photo 3"
+             onerror="this.parentElement.style.display='none'" />
+        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+
+      <!--
+        🏆 CERTIFICATES — place your certificate scans at: assets/images/certificates/
+      -->
+      <div class="gallery-item" data-type="certs">
+        <img src="assets/images/certificates/coursera.jpg" alt="Coursera"
+             onerror="this.parentElement.style.display='none'" />
+        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" data-type="certs">
+        <img src="assets/images/certificates/netcad.jpg" alt="Netcad"
+             onerror="this.parentElement.style.display='none'" />
+        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" data-type="certs">
+        <img src="assets/images/certificates/yuva_ai.jpg" alt="Yuva AI"
+             onerror="this.parentElement.style.display='none'" />
+        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" data-type="certs">
+        <img src="assets/images/certificates/ai4a.jpg" alt="AI4A"
+             onerror="this.parentElement.style.display='none'" />
+        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" data-type="certs">
+        <img src="assets/images/certificates/design_thinking.jpg" alt="Design Thinking"
+             onerror="this.parentElement.style.display='none'" />
+        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" data-type="certs">
+        <img src="assets/images/certificates/ace.jpg" alt="ACE"
+             onerror="this.parentElement.style.display='none'" />
+        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+
+    </div>
+    <p class="gallery-note">
+      <i class="fas fa-info-circle"></i>
+      Add photos to <code>assets/images/gallery/</code> and certificates to
+      <code>assets/images/certificates/</code>
+    </p>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+      <img src="" alt="" id="lightboxImg" />
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <section id="contact" class="contact-section">
+    <div class="section-label">05 / Contact</div>
+    <h2 class="section-title">Let's Connect</h2>
+    <p class="contact-sub">
+      Whether you're a recruiter, collaborator, or just someone who wants to say hi —
+      my inbox is always open.
+    </p>
+    <div class="contact-cards">
+      <a href="mailto:khandelwalkanak9@gmail.com" class="contact-card">
+        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+        <h3>Email</h3>
+        <p>khandelwalkanak9@gmail.com</p>
+      </a>
+      <!-- 👉 Replace the href with your actual phone number -->
+      <a href="tel:+91XXXXXXXXXX" class="contact-card">
+        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+        <h3>Phone</h3>
+        <p>+91 XXXXX XXXXX</p>
+      </a>
+      <!-- 👉 Replace href with your actual GitHub profile URL -->
+      <a href="https://github.com/YOUR_USERNAME" target="_blank" class="contact-card">
+        <div class="contact-icon"><i class="fab fa-github"></i></div>
+        <h3>GitHub</h3>
+        <p>View my repositories</p>
+      </a>
+      <!-- 👉 Replace href with your actual LinkedIn profile URL -->
+      <a href="https://linkedin.com/in/YOUR_PROFILE" target="_blank" class="contact-card">
+        <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+        <h3>LinkedIn</h3>
+        <p>Connect with me</p>
+      </a>
+    </div>
+
+    <div class="contact-form-wrap">
+      <h3>Send a Message</h3>
+      <div class="contact-form">
+        <div class="form-row">
+          <input type="text" id="contactName" placeholder="Your Name" />
+          <input type="email" id="contactEmail" placeholder="Your Email" />
+        </div>
+        <input type="text" id="contactSubject" placeholder="Subject" />
+        <textarea id="contactMessage" placeholder="Your message..." rows="5"></textarea>
+        <button class="btn-primary" id="sendBtn" onclick="handleContact()">
+          Send Message <i class="fas fa-paper-plane"></i>
+        </button>
+        <p id="formStatus" class="form-status"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <p>Designed &amp; Developed by <strong>Kanak Anupam Khandelwal</strong></p>
+    <p class="footer-sub">© 2025 All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
